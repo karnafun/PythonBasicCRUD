@@ -1,0 +1,8 @@
+Flask==2.2.2
+Werkzeug==2.2.2
+Flask-SQLAlchemy==2.5.1
+pymysql==1.0.2
+SQLAlchemy==1.4.36
+flask-cors==5.0.0
+cryptography==44.0.0
+PyJWT==2.10.1

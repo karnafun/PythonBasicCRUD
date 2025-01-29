@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Console</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="user_console.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>User Console</h1>
+        <div id="userInfo" class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Your Info</h4>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td id="userName"></td>
+                            </tr>
+                            <tr>
+                                <th>City</th>
+                                <td id="userCity"></td>
+                            </tr>
+                            <tr>
+                                <th>Age</th>
+                                <td id="userAge"></td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td id="userPhone"></td>
+                            </tr>
+                            <tr>
+                                <th>Birth Date</th>
+                                <td id="userBirthDate"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h4>Edit Your Info</h4>
+                    <form id="editUserForm">
+                        <div class="mb-3">
+                            <label for="editName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="editCity">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editAge" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="editAge">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPhone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="editPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editBirthDate" class="form-label">Birth Date</label>
+                            <input type="date" class="form-control" id="editBirthDate">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="user_console.js"></script>
+</body>
+</html>

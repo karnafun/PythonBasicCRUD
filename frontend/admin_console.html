@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <!-- Bootstrap 4.5.2 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="admin_console.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-dark text-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">User Management</h2>
+
+    <!-- Create User Form -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">Create User</div>
+      <div class="card-body bg-secondary text-white">
+        <form id="createUserForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="createName">Name</label>
+              <input type="text" class="form-control" id="createName" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="createCity">City</label>
+              <input type="text" class="form-control" id="createCity" placeholder="Enter city" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="createAge">Age</label>
+              <input type="number" class="form-control" id="createAge" placeholder="Enter age" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="createPhone">Phone</label>
+              <input type="text" class="form-control" id="createPhone" placeholder="Enter phone number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="createBirthDate">Birth Date</label>
+              <input type="date" class="form-control" id="createBirthDate" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Create User</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Refresh Users Button -->
+    <button class="btn btn-warning my-3" onclick="fetchUsers()">Refresh Users</button>
+
+    <!-- Users List Table -->
+    <div class="card bg-secondary">
+      <div class="card-header bg-primary text-white">Users List</div>
+      <div class="card-body bg-dark text-white">
+        <table class="table table-bordered table-hover" id="userTable">
+          <thead class="thead-dark">
+            <tr>
+              <th>Name</th>
+              <th>City</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Birth Date</th>
+              <th>Status</th>
+              <th>Created At</th>
+              <th>Updated At</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userList">
+            <!-- Users will be dynamically loaded here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Edit User Modal -->
+    <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="editUserModalLabel">Edit User</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-dark text-white">
+            <form id="editUserForm">
+              <div class="form-group">
+                <label for="editName">Name</label>
+                <input type="text" class="form-control" id="editName" required>
+              </div>
+              <div class="form-group">
+                <label for="editCity">City</label>
+                <input type="text" class="form-control" id="editCity" required>
+              </div>
+              <div class="form-group">
+                <label for="editAge">Age</label>
+                <input type="number" class="form-control" id="editAge" required>
+              </div>
+              <div class="form-group">
+                <label for="editPhone">Phone</label>
+                <input type="text" class="form-control" id="editPhone" required>
+              </div>
+              <div class="form-group">
+                <label for="editBirthDate">Birth Date</label>
+                <input type="date" class="form-control" id="editBirthDate" required>
+              </div>
+              <button type="submit" class="btn btn-success">Save Changes</button>
+              <input type="hidden" id="editUserId">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="admin_console.js"></script>
+</body>
+
+</html>

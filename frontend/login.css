@@ -1,0 +1,143 @@
+/* Apply the background image */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* The login container */
+.login-container {
+    background-image: url('https://tinyurl.com/loginimageformyapp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Dark overlay for the login form */
+.login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+}
+
+/* Login form styling */
+.login-form {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Form title */
+.login-form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
+
+/* Placeholder text */
+input::placeholder {
+    color: #888;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links for switching between forms */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+/* Styling for the error and success messages */
+.error-message, .success-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1000;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+    background-color: #f44336; /* Red background for errors */
+}
+
+.success-message {
+    background-color: #4CAF50; /* Green background for success */
+}
+
+.error-message a, .success-message a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-message:hover, .success-message:hover {
+    opacity: 0.8;
+}
+
+/* Ensure the messages fade out after 5 seconds */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.error-message, .success-message {
+    animation: fadeOut 5s forwards;
+}

@@ -1,0 +1,125 @@
+/* Background and text color */
+body {
+    background-color: #2f2f2f;
+    color: #dcdcdc;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #dcdcdc;
+}
+
+/* Table Styles */
+.table {
+    color: #dcdcdc;
+}
+
+.table thead {
+    background-color: #1f1f1f;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #333;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #444;
+}
+
+.table th {
+    background-color: #3c3c3c;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+.form-control {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #dcdcdc;
+}
+
+.form-control:focus {
+    background-color: #555;
+    color: #fff;
+    border-color: #0f3f72;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0f3f72;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* User Info Section */
+#userInfo {
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Modal styles */
+.modal-content {
+    background-color: #2f2f2f;
+    color: white;
+}
+
+.modal-header {
+    background-color: #3c3c3c;
+}
+
+.modal-footer {
+    background-color: #3c3c3c;
+}
+
+.modal-body {
+    background-color: #1f1f1f;
+}
+
+/* Success/Error Message */
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}

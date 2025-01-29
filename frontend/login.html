@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-container">
+    <!-- Dark overlay -->
+    <div class="login-overlay"></div>
+
+    <!-- Login form -->
+    <div class="login-form" id="loginFormContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="javascript:void(0);" id="showRegisterForm">Create User</a></p>
+        </form>
+    </div>
+
+    <!-- Register form -->
+    <div class="login-form" id="registerFormContainer" style="display: none;">
+        <h2>Create Account</h2>
+        <form id="registerForm">
+            <input type="text" id="newUsername" placeholder="Username" required><br>
+            <input type="password" id="newPassword" placeholder="Password" required><br>
+            <input type="password" id="verifyPassword" placeholder="Verify Password" required><br>
+            <button type="submit">Create User</button>
+            <p>Already have an account? <a href="javascript:void(0);" id="showLoginForm">Login</a></p>
+        </form>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

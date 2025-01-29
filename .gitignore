@@ -1,0 +1,65 @@
+# Python Bytecode Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / Packaging
+*.egg
+*.egg-info
+dist/
+build/
+*.tar.gz
+*.zip
+
+# VS Code and IDE configurations
+.vscode/
+.idea/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Frontend (if you use Node.js or any other frontend tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python Migrations (if using Flask migrations or Alembic)
+migrations/
+
+# Flask related
+instance/
+*.db
+
+# dotenv and secrets files
+.env
+*.env
+config.py  # If this contains sensitive information like API keys
+
+# Database files
+*.sqlite
+*.db
+*.db-journal
+
+# JetBrains IDE configurations
+.idea/
+
+# Python testing
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
