@@ -20,4 +20,4 @@ Before running the application, follow these steps to set up the environment:
    - Run the script by executing the following command in your terminal:
 
    ```bash
-  python .\Scripts\setup_db.py
+   python ./Scripts/setup_db.py
