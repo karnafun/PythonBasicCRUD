@@ -15,9 +15,9 @@ Before running the application, follow these steps to set up the environment:
    - Download and install MySQL Server from the [official MySQL website](https://dev.mysql.com/downloads/installer/).
    - Ensure that MySQL is running and you have access to the root user.
 
-2. **Run `setup_script.py`:**
+2. **Run `setup_script.py` from Scripts folder:**
    - This script installs all the required dependencies listed in `requirements.txt`.
    - Run the script by executing the following command in your terminal:
 
    ```bash
-   python setup_script.py
+  python .\Scripts\setup_db.py
